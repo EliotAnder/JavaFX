@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0"
+            prefWidth="450.0" styleClass="background" stylesheets="@scratch.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EditDialogController">
+    <center>
+        <VBox minWidth="200.0" prefHeight="200.0" prefWidth="100.0" styleClass="background"
+              BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="textField" promptText="Enter Name">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="ageField" promptText="Enter Age">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="birthdayField" promptText="Enter Birthday">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </VBox.margin>
+                </TextField>
+            </children>
+            <BorderPane.margin>
+                <Insets top="20.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </center>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="background" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonSave" defaultButton="true" mnemonicParsing="false" onAction="#actionSave"
+                        prefHeight="33.0" prefWidth="105.0" text="Save">
+                    <VBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="15.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="buttonCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionClose"
+                        prefHeight="33.0" prefWidth="106.0" text="Cancel">
+                    <VBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="25.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets top="20.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </right>
+</BorderPane>
